@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.promo-banner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.promo-banner-image img {
+    width: 100%;
+    height: auto;
+}
+
+.promo-details {
+    color: white;
+    text-align: right;
+    width: 80%;
+    margin-top: 20%;
+    margin-left: 16%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.promo-details h2 {
+    font-size: 20px;
+    color: rgb(27, 26, 26);
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.promo-details h1 {
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+
+.promo-details p {
+    font-size: 16px;
+}
+
+.shopNow {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    width: 130px;
+}
+
+.promo-details .validity {
+    font-size: 14px;
+    font-style: italic;
+    color: black;
+    margin-top: 8px;
+}
+
+.promo-details2 {
+    text-align: center;
+    width: 50%;
+    color: white;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.category {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 7px;
+}
+
+.category p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.category button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    height: 400px;
+}
+
+.large-picture {
+    grid-row: span 2;
+    background: url('photorealistic-view-owl-bird-night.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.small-picture1, .small-picture2 {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.small-picture1 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/1200px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg');
+}
+
+.small-picture2 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/1200px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg');
+}
+
+.main-photos {
+    width: 60%;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .large-picture {
+        grid-row: span 1;
+        height: 300px;
+    }
+
+    .small-picture1, .small-picture2 {
+        height: 200px;
+    }
+
+    .promo-details {
+        position: static;
+        text-align: center;
+        margin: 20px 0;
+        background: transparent;
+        padding: 0;
+    }
+
+    .promo-details2 {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        float: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-details h2, .promo-details h1 {
+        font-size: 16px;
+    }
+
+    .promo-details p, .promo-details .validity {
+        font-size: 12px;
+    }
+
+    .shopNow {
+        width: 100px;
+        padding: 8px;
+    }
+
+    .category p {
+        font-size: 14px;
+    }
+
+    .category button {
+        padding: 8px 16px;
+    }
+}
